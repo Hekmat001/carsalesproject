@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <title> افغان موټر فروشي - د پیسو تادیه</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">🚗 افغان موټر فروشي</a>
+  <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul id="navMenu">
+            <li><a href="index.html">Home/هوم پیج</a></li>
+            <li><a href="car-list.html">د موټرو لیست</a></li>
+            <li><a href="add-car.html">موټر اضافه کړئ</a></li>
+            <li><a href="payment.html" class="active">د پیسو تادیه</a></li>
+            <li><a href="login.html">داخلیدل</a></li>
+            <li><a href="register.html">راجستر</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>د موټر انتخاب او تادیه</h1>
+        <p>دخپل انتخاب شوي موټر لپاره پیسې ولیږئ (تادیه) کړئ</p>
+    </div>
+
+    <div class="payment-wrapper">
+
+        <div class="selected-car">
+            <img src="images/suv1.jpg" alt="انتخاب شوی موټر">
+            <div class="car-info">
+                <h2>فـورنر</h2>
+                <div class="price">۹۵۰۰۰۰ افغانـی</div>
+                <div class="spec-grid">
+                    <div class="spec-item">
+                        <div class="label">کال</div>
+                        <div class="value">۲۰۱۸</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="label">کیلومتر</div>
+                        <div class="value">۵۰۰۰</div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="label">تیل</div>
+                        <div class="value">پطــرول</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="payment-form-box">
+            <h2>د پیسو وضع کولو فورمـه 💳</h2>
+
+            <div class="payment-methods">
+                <button class="pay-method active" onclick="selectMethod(this)">
+                    <span class="icon">🏦</span>
+                    بانکي حساب
+                </button>
+                <button class="pay-method" onclick="selectMethod(this)">
+                    <span class="icon">📱</span>
+                    د موبایل له لاري 
+                </button>
+                <button class="pay-method" onclick="selectMethod(this)">
+                    <span class="icon">💵</span>
+                    نغدي پيسې
+                </button>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label>بشپړ نوم</label>
+                    <input type="text" placeholder="خپل بشپړ نوم ولیکئ">
+                </div>
+
+                <div class="form-group">
+                    <label>د تلیفون شمیره</label>
+                    <input type="tel" placeholder=" تلیفون شمیره">
+                </div>
+
+                <div class="form-group">
+                    <label>ایمیل/بریښنالیک</label>
+                    <input type="email" placeholder="www.email.com">
+                </div>
+
+                <div class="form-group">
+                    <label>آدرس</label>
+                    <input type="text" placeholder="خپل بشپړ آدرس ولیکئ">
+                </div>
+
+                <div class="summary">
+                    <div class="summary-row">
+                        <span>د موټر قیمت</span>
+                        <span>۹۵۰۰۰۰ افغانۍ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>د خدماتو فیس</span>
+                        <span>۱۰۰۰ افغانۍ</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>مالیات</span>
+                        <span>۵۰۰ افغانۍ</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>ټول مبلغ</span>
+                        <span>۹۵۱۵۰۰ افغانۍ</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width:100%">د پیسو لیږلو تائید✅</button>
+            </form>
+        </div>
+
+    </div>
+
+     <footer>
+        <div class="logo">افغان موټر فروشي آدرسونه</div>
+        <ul>
+            <li><a href=""><img class="fimage" src="./images/logo images/watsapp.jpg" alt=".image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/facebook.jpg" alt="this waht image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/message.jpg" alt="this waht image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/IMG-20260412-WA0009.jpg" alt="this waht image"></a></li>
+        </ul>
+        <p>د افغان موټر فروشي ویب پاڼی ټول حقوق خوندي دي</p>
+    </footer>
+
+    
+</body>
+</html>

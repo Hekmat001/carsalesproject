@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add-car.css">
+    <title>افغان موټر فروشي - موټر اضافه کړئ</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">🚗 افغان موټر فروشي</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul id="navMenu">
+            <li><a href="index.html">Home/هوم پیج</a></li>
+            <li><a href="car-list.html">د موټرو لیست</a></li>
+            <li><a href="add-car.html" class="active">موټر اضافه کړئ</a></li>
+            <li><a href="payment.html">د پیسو تادیه</a></li>
+            <li><a href="login.html">داخلیدل</a></li>
+            <li><a href="register.html">راجستر</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1> د نوي موټر اضافه کیدل</h1>
+        <p>دلته خپل موټر  ثبت او اضافه کړئ ترڅو نور خلک یې ووېني</p>
+    </div>
+
+    <div class="add-car-container">
+        <div class="add-car-form">
+            <h2>🚗 د موټر مشخصات لاندي اضافه کړئ🚖</h2>
+
+            <form>
+                <div class="two-col">
+                    <div class="form-group">
+                        <label>د موټر نوم</label>
+                        <input type="text" placeholder="د موټر نوم ولیکی">
+                    </div>
+                    <div class="form-group">
+                        <label>ماډل / کال</label>
+                        <input type="text" placeholder="د موټر ماډل">
+                    </div>
+                </div>
+
+                <div class="two-col">
+                    <div class="form-group">
+                        <label>د موټر قیمت(افغانۍ)</label>
+                        <input type="text" placeholder="د پیسو اندازه">
+                    </div>
+                    <div class="form-group">
+                        <label>د موټر چلاو(کیلومتر)</label>
+                        <input type="text" placeholder="د چلاو اندازه">
+                    </div>
+                </div>
+
+                <div class="two-col">
+                    <div class="form-group">
+                        <label>د تیلو ډول</label>
+                        <select>
+                            <option value="">انتخاب کړئ</option>
+                            <option value="پطرول">پطرول</option>
+                            <option value="ډیزل">ډیزل</option>
+                            <option value="برېښنایی">برېښنایی</option>
+                            <option value="هایبرایډ">هایبرایډ</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>کټګوری</label>
+                        <select>
+                            <option value="">انتخاب کړئ</option>
+                            <option value="SUV">SUV</option>
+                            <option value="سیدان">سیدان</option>
+                            <option value="سپورټ">سپورټ</option>
+                            <option value="کوپ">کوپ</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>د موټر توضیحات</label>
+                    <textarea placeholder="د موټر په اړه اضافه معلومات ولیکئ..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>د موټر عکس</label>
+                    <label class="file-upload">
+                        <div class="icon">📷</div>
+                        <p>دلته کلیک کړئ یا عکس راکش کړئ</p>
+                        <input type="file" accept="image/*">
+                    </label>
+                </div>
+
+                <div class="two-col">
+                    <div class="form-group">
+                        <label>د اړیکې شمیره</label>
+                        <input type="tel" placeholder="شمیره ولیکئ">
+                    </div>
+                    <div class="form-group">
+                        <label>آدرس </label>
+                        <input type="text" placeholder="آدرس">
+                    </div>
+                </div>
+
+                <div class="btn-row">
+                    <button type="submit" class="btn-primary">موټر ثبت کړئ ✅</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="logo">افغان موټر فروشي آدرسونه</div>
+        <ul>
+            <li><a href=""><img class="fimage" src="./images/logo images/watsapp.jpg" alt=".image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/facebook.jpg" alt="this waht image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/message.jpg" alt="this waht image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/IMG-20260412-WA0009.jpg" alt="this waht image"></a></li>
+        </ul>
+        <p>د افغان موټر فروشي ویب پاڼی ټول حقوق خوندي دي </p>
+    </footer>
+
+     
+</body>
+</html>

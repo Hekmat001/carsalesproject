@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/car-list.css">
+    <title>افغان موټر فروشي - د موټرو لیست</title>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">🚗 افغان موټر فروشي</a>
+ <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul id="navMenu">
+            <li><a href="index.html">Home/هوم پیج</a></li>
+            <li><a href="car-list.html" class="active">د موټرو لیست</a></li>
+            <li><a href="add-car.html">موټر اضافه کړئ</a></li>
+            <li><a href="payment.html">د پیسو تادیه</a></li>
+            <li><a href="login.html">داخلیدل</a></li>
+            <li><a href="register.html">راجستر</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>د موټرو لیست</h1>
+        <p>ټول موجود موټرونه دلته وګورئ او خپل د خوښي موټر انتخاب کړی...!</p>
+    </div>
+
+    <div class="search-filter">
+        <div class="search-box">
+            <input type="text" placeholder="🔍 موټر ولټوئ...">
+        </div>
+        <div class="filter-btns">
+            <button class="active" onclick="filterCars('ټول', this)">ټول</button>
+            <button onclick="filterCars('4Nur', this)">4Nur</button>
+            <button onclick="filterCars('سپورټ', this)">سپورټ</button>
+            <button onclick="filterCars('سیدان', this)">سیدان</button>
+            <button onclick="filterCars('کوپ', this)">کوپ</button>
+        </div>
+    </div>
+
+    <section class="car-list-grid" id="carGrid">
+        <div class="list-card" data-category="4Nur">
+            <img src="images/suv1.jpg" alt="SUV موټر">
+            <div class="info">
+                <h3>فـورنــر</h3>
+                <div class="price">۹۵۰۰۰۰ افغانـی</div>
+                <div class="details">
+                    <span>📅 ۲۰۱۸</span>
+                    <span>⛽ پطــرول</span>
+                    <span>🔄 ۵۰۰۰  KM</span>
+                </div>
+                <span class="tag">4Nur</span>
+                <div class="card-btns">
+                    <a href="payment.html" class="btn-primary">انتخاب او پیرود</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-card" data-category="سپورټ">
+            <img src="images/sport1.jpg" alt="سپورټ موټر">
+            <div class="info">
+                <h3>GT سپورتـي موټر</h3>
+                <div class="price">۱۲۵۰۰۰۰ افغانـی</div>
+                <div class="details">
+                    <span>📅 ۲۰۲۵</span>
+                    <span>⛽ پطــرول</span>
+                    <span>🔄 ۵۹۰ KM</span>
+                </div>
+                <span class="tag">sport</span>
+                <div class="card-btns">
+                    <a href="payment.html" class="btn-primary">انتخاب او پیرود</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-card" data-category="LX">
+            <img src="images/sedan1.jpg" alt="لکــسیز">
+            <div class="info">
+                <h3>لکــسیز</h3>
+                <div class="price">۸۳۰۰۰۰ افغانـی</div>
+                <div class="details">
+                    <span>📅 ۲۰۲۰</span>
+                    <span>⛽ برقـي</span>
+                    <span>🔄 ۲۰۰۰ KM</span>
+                </div>
+                <span class="tag">LX</span>
+                <div class="card-btns">
+                    <a href="payment.html" class="btn-primary">انتخاب او پیرود</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-card" data-category="KN">
+            <img src="images/coupe1.jpg" alt="سلور کیا نیرو">
+            <div class="info">
+                <h3>سلور کیا نیرو</h3>
+                <div class="price">۱۵۷۰۰۰۰ افغانـی</div>
+                <div class="details">
+                    <span>📅 ۲۰۲۳</span>
+                    <span>⛽ بـرقي</span>
+                    <span>🔄 ۱۰۰۰ KM</span>
+                </div>
+                <span class="tag">KN</span>
+                <div class="card-btns">
+                    <a href="payment.html" class="btn-primary">انتخاب او پیرود</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-card" data-category="SUV">
+            <img src="images/suv2.jpg" alt="SUV موټر">
+            <div class="info">
+                <h3>SUV پـرو</h3>
+                <div class="price">۱۲۰۰۰۰۰ افغانـی</div>
+                <div class="details">
+                    <span>📅 ۲۰۱۹</span>
+                    <span>⛽ پطــرول</span>
+                    <span>🔄 ۳۲۰۰ KM</span>
+                </div>
+                <span class="tag">SUV</span>
+                <div class="card-btns">
+                    <a href="payment.html" class="btn-primary">انتخاب او پیرود</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-card" data-category="سیدان">
+            <img src="images/sedan2.jpg" alt="زري سیدان">
+            <div class="info">
+                <h3>زري سیدان</h3>
+                <div class="price">۵۴۰۰۰۰۰ افغانـی</div>
+                <div class="details">
+                    <span>📅 ۲۰۲۱</span>
+                    <span>⛽ پطــرول</span>
+                    <span>🔄 ۳۲۰۰ KM</span>
+                </div>
+                <span class="tag">SID</span>
+                <div class="card-btns">
+                    <a href="payment.html" class="btn-primary">انتخاب او پیرود</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer>
+        <div class="logo">افغان موټر فروشي آدرسونه</div>
+        <ul>
+            <li><a href=""><img class="fimage" src="./images/logo images/watsapp.jpg" alt=".image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/facebook.jpg" alt="this waht image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/message.jpg" alt="this waht image"></a></li>
+            <li><a href=""><img class="fimage" src="./images/logo images/IMG-20260412-WA0009.jpg" alt="this waht image"></a></li>
+        </ul>
+        <p>د افغان موټر فروشي ویب پاڼی ټول حقوق خوندي دي </p>
+    </footer>
+
+  
+</body>
+</html>
